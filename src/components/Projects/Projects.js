@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import music from "../../Assets/Projects/music.png";
+import game from "../../Assets/Projects/game.png";
+import bookstore from "../../Assets/Projects/bookstore.png";
+import techxi from "../../Assets/Projects/techxi.png";
+import academy from "../../Assets/Projects/academy.png";
+import classroom from "../../Assets/Projects/classroom.png";
 
 function Projects() {
   return (
@@ -15,76 +15,70 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few things I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={techxi}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="TechXi Application"
+              description="A Grab Clone application for organizing customers, drivers, bookings, payments, and travel. It comes with Google Maps APIs and an MVC-based architecture. The project includes a moblie application for drivers and customers, also a web application for organizers. Build with ReactJS, ReactNative and Javasript with MongoDB. I'm mainly responsible with front-end development, the website and the mobile app."
+              ghLink="https://github.com/orgs/KTPM-Techxi/repositories"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={classroom}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Goolge Classroom Application"
+              description="A Google Classroom alike websites with fully functionally features like the originals. The Application works with OAuth, email confirming sign up, live notifications,... The project is built with ReactJS framework on the frontend, with TypeScript and PostgreSQL. I'm mainly responsible for frontend development."
+              ghLink="https://github.com/Danteee27/Online-Classroom"
+              demoLink="https://online-classroom-navy.vercel.app/login"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={bookstore}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="BookWorms E-commerce Website"
+              description= "An online bookstore with fully operational features like other e-commerce websites. This was one of my first applications with ReactJS and JavaScript, utilizing Firebase DB. I'm responsible for both the front-end and back-end of this project."
+              ghLink="https://github.com/nkhang1902/bookStore"         
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={academy}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Online Academy Website"
+              description="An online website for users to buy and attend courses with tutorial videos. Additionally, teachers can create courses and upload lesson materials. The application is built with HTML and JavaScript, with MySQL as the database. I mainly worked on the front-end and database for this application. "
+              ghLink="https://github.com/Danteee27/Online-Academy-"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={music}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Android Music Player"
+              description="A music player for Android with basic features of a music app such as skip, reverse, pause, etc. It also includes functions like creating new playlists or browsing trending music categories. This mobile application for Android users is built with Kotlin and Java, and I fully participated in the development process."
+              ghLink="https://github.com/Danteee27/Android-Music-Player"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={game}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="The Last Soil VideoGame"
+              description="This is my first game product power by Unity, it is a 2D top down replicate of Plants Vs Zombie with a mix of mordern roguelike games. I mainly took part in coming up and designing the gameplay, also the implementing ideas into actual game by C# and Unity FrameWork."
+              ghLink="https://github.com/TheUltraBadDuck/TheLastSoil"
+              demoLink="https://www.youtube.com/watch?v=2A0Re1deQ8I"
             />
           </Col>
         </Row>

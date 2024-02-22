@@ -12,12 +12,9 @@ function Footer() {
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
-      <Row>
+      <Row className="d-flex justify-content-between">
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Template by Soumyajit Behera</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
